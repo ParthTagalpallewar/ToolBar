@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/menu_secondActivity"
+        android:title="SecondActivity"
+        app:showAsAction="never"
+        />
+
+    <item android:id="@+id/menu_thirdActivity"
+        android:title="ThirdActivity"
+        app:showAsAction="never"
+        />
+
+    <item android:id="@+id/menu_fourthActivity"
+    android:title="FourthActivity"
+    app:showAsAction="never"
+    />
+
+    <item android:id="@+id/menu_fifthActivity"
+        android:title="FifthActivity"
+        app:showAsAction="never"
+        />
+
+    <item android:id="@+id/menu_search"
+        android:title="Search"
+        android:icon="@drawable/ic_baseline_search_24"
+        app:showAsAction="ifRoom|collapseActionView"
+        app:actionViewClass="android.widget.SearchView" />
+
+    <item android:id="@+id/menu_searchViewActivity"
+        android:title="simple search"
+        app:showAsAction="never"
+        />
+
+</menu>

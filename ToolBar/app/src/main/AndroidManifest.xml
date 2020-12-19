@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.toolbar">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".searchView.SearchViewWithToolbar.SearchViewWithToolbar"></activity>
+        <activity android:name=".searchView.simpleSearchView.SearchViewExample" />
+        <activity android:name=".contextualActionMode.forMultipleVisualViews.secondMethod.Sixth" />
+        <activity android:name=".contextualActionMode.forMultipleVisualViews.firstMethod.Fifth" />
+        <activity android:name=".contextualActionMode.forIndivisualViews.FourthActivity" />
+        <activity
+            android:name=".floatingContextMenu.ThirdActivity"
+            android:parentActivityName=".simpleMenu.MainActivity" />
+        <activity
+            android:name=".floatingContextMenu.SecondActivity"
+            android:parentActivityName=".simpleMenu.MainActivity" />
+        <activity android:name=".simpleMenu.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
