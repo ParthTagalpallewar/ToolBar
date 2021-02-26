@@ -9,18 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".searchView.SearchViewWithToolbar.SearchViewWithToolbar"></activity>
-        <activity android:name=".searchView.simpleSearchView.SearchViewExample" />
-        <activity android:name=".contextualActionMode.forMultipleVisualViews.secondMethod.Sixth" />
-        <activity android:name=".contextualActionMode.forMultipleVisualViews.firstMethod.Fifth" />
-        <activity android:name=".contextualActionMode.forIndivisualViews.FourthActivity" />
+
+        <activity android:name="com.example.toolbar.multiselectInRecyclerView.MultiSelectExample" />
         <activity
-            android:name=".floatingContextMenu.ThirdActivity"
-            android:parentActivityName=".simpleMenu.MainActivity" />
-        <activity
-            android:name=".floatingContextMenu.SecondActivity"
-            android:parentActivityName=".simpleMenu.MainActivity" />
-        <activity android:name=".simpleMenu.MainActivity">
+            android:name=".floatingContextMenu.FloatingMenu"
+            android:parentActivityName=".MainActivity" />
+
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

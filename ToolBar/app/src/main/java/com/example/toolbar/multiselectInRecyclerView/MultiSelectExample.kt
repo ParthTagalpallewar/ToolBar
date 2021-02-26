@@ -1,4 +1,4 @@
-package com.example.toolbar.contextualActionMode.forMultipleVisualViews.firstMethod
+package com.example.toolbar.multiselectInRecyclerView
 
 import android.os.Bundle
 import android.view.Menu
@@ -16,7 +16,7 @@ import com.example.toolbar.R
 /*https://heartbeat.fritz.ai/implementing-a-multi-select-recylerview-with-a-dynamic-actionbar-in-android-e36f16a47a1b */
 
 
-class Fifth : AppCompatActivity() ,SearchView.OnQueryTextListener{
+class MultiSelectExample : AppCompatActivity() ,SearchView.OnQueryTextListener{
 
 
     lateinit var mToolbar: Toolbar
@@ -31,7 +31,7 @@ class Fifth : AppCompatActivity() ,SearchView.OnQueryTextListener{
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_fifth)
-        mToolbar = findViewById(R.id.toolbar)
+
         setToolbar()
         initView()
         showRecyclerView()
@@ -39,6 +39,7 @@ class Fifth : AppCompatActivity() ,SearchView.OnQueryTextListener{
 
     private fun setToolbar() {
 
+        mToolbar = findViewById(R.id.toolbar)
         setSupportActionBar(mToolbar)
     }
 
@@ -50,9 +51,12 @@ class Fifth : AppCompatActivity() ,SearchView.OnQueryTextListener{
     }
 
     private fun initView() {
-        mRecyclerView = findViewById(R.id.fifth_recyclerView)
-        mRecyclerView.hasFixedSize()
-        mRecyclerView.layoutManager = LinearLayoutManager(applicationContext)
+        mRecyclerView =  findViewById(R.id.fifth_recyclerView)
+        mRecyclerView.apply {
+            mRecyclerView.hasFixedSize()
+            mRecyclerView.layoutManager = LinearLayoutManager(applicationContext)
+        }
+
     }
 
     private fun data():ArrayList<String>{
@@ -67,7 +71,6 @@ class Fifth : AppCompatActivity() ,SearchView.OnQueryTextListener{
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         super.onCreateOptionsMenu(menu)
         menuInflater.inflate(R.menu.appbar_individual_actionmode, menu)
-
 
         val searchViewItem: MenuItem = menu!!.findItem(R.id.fourthMenuSearch)
         val searchView: SearchView = MenuItemCompat.getActionView(searchViewItem) as SearchView

@@ -1,4 +1,4 @@
-package com.example.toolbar.contextualActionMode.forIndivisualViews
+package com.example.toolbar.contextualActionMode
 //https://medium.com/over-engineering/using-androids-actionmode-e903181f2ee3
 
 import androidx.appcompat.app.AppCompatActivity
@@ -11,7 +11,7 @@ import android.widget.Toast
 import androidx.appcompat.view.ActionMode
 import com.example.toolbar.R
 
-class FourthActivity : AppCompatActivity() {
+class `ContextualMenu` : AppCompatActivity() {
 
     var actionMode: ActionMode? = null
 

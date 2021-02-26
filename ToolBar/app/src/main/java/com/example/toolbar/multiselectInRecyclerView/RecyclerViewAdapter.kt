@@ -1,4 +1,4 @@
-package com.example.toolbar.contextualActionMode.forMultipleVisualViews.firstMethod
+package com.example.toolbar.multiselectInRecyclerView
 
 
 import android.annotation.SuppressLint
@@ -8,7 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.view.ActionMode
 import androidx.recyclerview.widget.RecyclerView
 import com.example.toolbar.R
-import com.example.toolbar.contextualActionMode.forMultipleVisualViews.firstMethod.Fifth.Companion.staticStringList
+import com.example.toolbar.multiselectInRecyclerView.MultiSelectExample.Companion.staticStringList
 import kotlinx.android.synthetic.main.item_recyclerview.view.*
 
 class RecyclerViewAdapter(private val mActivity: AppCompatActivity, private var stringList:ArrayList<String>):RecyclerView.Adapter<RecyclerView.ViewHolder>(),ActionMode.Callback {
